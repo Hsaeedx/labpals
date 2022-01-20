@@ -13,8 +13,8 @@ def show_index():
     context = {"obama": 1}
     logged_in_user = flask.session.get('username')
 
-    if logged_in_user is None:
-        return flask.redirect(flask.url_for("login"))
+    # if logged_in_user is None:
+    #     return flask.redirect(flask.url_for("login"))
 
     return flask.render_template("index.html", **context)
 
